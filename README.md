@@ -1,5 +1,7 @@
 # Character Modeling in Blender
 
+Resources for Boston Blender character modeling meetup.
+
 ---
 
 ## Shortcuts
@@ -79,7 +81,7 @@ To use my preferences:
 * in **blender** select my keyboard profile (Lajos) in **Edit/Preferences/Keymap**
   * you can still use the original **Blender** shortcuts by selecting that profile
 
-This is what the config folder looks like on windows (the original `userpref.blend` renamed to `userpref.blend.bak`, there might be more or less files in there):
+This is what the config folder looks like on windows (the original `userpref.blend` renamed to `userpref.blend.bak`; there might be more or less files in there):
 
 ![config_folder](images/config_folder.jpg)
 
@@ -87,3 +89,32 @@ To change keymap:
 
 ![keymap_change](images/keymap.gif)
 
+---
+
+## Add reference images
+
+To load the reference ortho images, first add two empty image objects: **Add/Empty/Image** (you can also use the **shift-A** shortcut):
+
+![add_empty_image](images/add_empty_image.jpg)
+
+I named the objects **ref_front** and **ref_right**.
+
+Set the location and rotation for the image objects in the **Object** tab:
+
+![image_position](images/image_position.jpg)
+
+Load the images in the **Object Data** tab for each image object. Make sure to set **Offset X** to **-0.5** and **Offset Y** to **0** so the images line up to the ground and center of the world:
+
+![image_data](images/image_data.jpg)
+
+Create a new **collection** for the reference images in the **Outliner**:
+
+![collections](images/collections.gif)
+
+Notice the **cursor**, **eye** and **camera** icons next to collections and objects:
+
+* **cursor** - enable/disable selection of object or collection
+* **eye** - show/hide object or collection in viewport
+* **camera** - show/hide object or collection in renders
+
+![image_collection](images/image_collection.jpg)
