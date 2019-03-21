@@ -17,7 +17,7 @@ Resources for Boston Blender character modeling meetup.
 | **shift-Z** | toggle wireframe/solid shading |
 | **alt-Z** | toggle xray shading |
 | **shift-A** | add object |
-| **tab** | toggle object/edit mode |
+| **TAB** | toggle object/edit mode |
 | **ctrl-A** | apply transformation |
 
 
@@ -26,17 +26,13 @@ Resources for Boston Blender character modeling meetup.
 | Shortcut | Action |
 | ---- | ---- |
 | **X** | delete object/component |
-| **ctrl-R** | subdivide |
+| **ctrl-R** | loop cut |
 | **K** | knife tool |
 | **alt-LMB** | select edge loop |
 | **, (comma)** | orientation menu |
-| **** | |
-| **** | |
-| **** | |
-| **** | |
-| **** | |
-| **** | |
-| **** | |
+| **M** | merge (join vertices) |
+| **V** | rip (split vertices) |
+| **shift-F** | fill polygon (make faces) |
 
 
 ### NURBS Hair Modeling
@@ -118,3 +114,76 @@ Notice the **cursor**, **eye** and **camera** icons next to collections and obje
 * **camera** - show/hide object or collection in renders
 
 ![image_collection](images/image_collection.jpg)
+
+---
+
+## Extrude
+
+We'll use extrusion as one of the tools to add geometry to our model.
+
+First make sure that you are in **Edit Mode** (**TAB** key) and in **Face** selection mode (**3** key with my awesome keymap):
+
+![component_mode](images/component_mode.jpg)
+
+Select a face or multiple faces. You can use the **Face/Extrude Faces** menu or **ctrl-E** shortcut.
+
+After the extrusion you can move the new faces, or for more control hit **ESC** to exit the automatic move mode and use the move tool (**W** key). You can also scale and rotate the new faces.
+
+![extrude](images/extrude.gif)
+
+---
+
+## Loop Cut
+
+We can add resolution to our model by creating new edge loops with the **Loop Cut** tool, **ctrl-R** shortcut.
+
+Make sure **Edge** selection mode is active.
+
+The loop cut tool is context sensitive, it will create new loops based on the orientation of the closest edge to the mouse cursor.
+
+When the loop cut tool is active, the number of new loops can be adjusted by turning the mouse wheel. After clicking the **LMB**, the new edges can be moved, or to leave them in the center, hit the **ESC** key.
+
+![loop_cut](images/loop_cut.gif)
+
+---
+
+## Knife Tool
+
+Another tool for creating new edges is the **Knife Tool** (**K** shortcut).
+
+Make sure to start and end on a vertex to avoid adding unwanted vertices (notice the red outline around the green cursor when hovering over a vertex).
+
+![knife](images/knife.gif)
+
+---
+
+## Removing Edges
+
+We can remove edges using the delete popup menu (**X** key).
+
+Notice that the **Delete Edges** option also deletes the face, making a hole on the object. A better operation is **Dissolve Edges** that leaves the face intact.
+
+![delete_edges](images/delete_edges.gif)
+
+Vertices and faces can also be removed using the same menu.
+
+---
+
+## Filling in Holes
+
+To fill in a hole (create a new face), select the vertices around the hole and use the **shift-F** shortcut (the operation is **New Edge/Face from Vertices** in the **Vertex** menu)
+
+![fill_hole](images/fill_hole.gif)
+
+
+---
+
+## Meging Vertices
+
+Multiple vertices can be welded together from the **Merge** popup menu, the shortcut is **M**.
+
+In this case we want to fix a slit in the object. The screen left vertex is in the correct position. First select the right vertex then the left one and use the **At Last** option from the **Merge** menu to weld the vertices at the position of the last selected vertex.
+
+![merge_verts](images/merge_verts.gif)
+
+---
