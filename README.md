@@ -87,7 +87,7 @@ To change keymap:
 
 ---
 
-## Add reference images
+## Importing Reference Images
 
 To load the reference ortho images, first add two empty image objects: **Add/Empty/Image** (you can also use the **shift-A** shortcut):
 
