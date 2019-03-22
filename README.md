@@ -2,6 +2,8 @@
 
 Resources for Boston Blender character modeling meetup.
 
+![e2_banner](images/e2_banner.jpg)
+
 ---
 
 ## List of Files
@@ -13,9 +15,9 @@ Resources for Boston Blender character modeling meetup.
 | **model/e2_2.79_001.blend** | base project with reference images, blender 2.79 |
 | **model/e2_002.blend** | pelvis |
 | **model/e2_003.blend** | torso whole piece |
-| **model/e2_004.blend** | arms |
+| **model/e2_004.blend** | arm |
 | **model/e2_005.blend** | leg |
-| **model/e2_005.blend** | knees/elbows |
+| **model/e2_006.blend** | knees/elbows |
 | **model/e2_128.blend** | textured model turnaround |
 | **model/images/e2_*.png** | ortho images |
 | **model/images/eye.png** | eye texture |
@@ -41,6 +43,8 @@ Resources for Boston Blender character modeling meetup.
 | **shift-D** | duplicate object |
 | **alt-D** | duplicate linked |
 | **ctrl-J** | join objects |
+| **C** | circle select |
+| **alt-A** | deselect |
 
 
 ### Mesh Modeling
@@ -65,6 +69,14 @@ Resources for Boston Blender character modeling meetup.
 | **ctrl-T** | rotate at control point |
 | **ctrl-L** | select linked |
 
+
+### Texture Painting
+
+| Shortcut | Action |
+| ---- | ---- |
+| **S** | sample color (eyedropper) |
+
+---
 
 ## User Preferences
 
@@ -317,3 +329,20 @@ To fix, set the **Clip Start** value smaller in the sidebar. Open with the small
 ![clipping_plane](images/clipping_plane.gif)
 
 ---
+
+## Paint (Circle) Select
+
+Make selections using a paint brush using the **Circle Select** tool (shortcut **C**).
+
+| Button | Action |
+| -- | -- |
+| **LMB** | add to selection |
+| **MMB** | remove from selection |
+| **RMB** | exit tool |
+| **wheel** | adjust brush size |
+
+![circle_select](images/circle_select.gif)
+
+---
+
+
