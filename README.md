@@ -4,6 +4,25 @@ Resources for Boston Blender character modeling meetup.
 
 ---
 
+## List of Files
+
+| File Name | Description |
+| --- | --- |
+| **userpref.blend** | user preferences |
+| **model/e2_001.blend** | base project with reference images |
+| **model/e2_2.79_001.blend** | base project with reference images, blender 2.79 |
+| **model/e2_002.blend** | pelvis |
+| **model/e2_003.blend** | torso whole piece |
+| **model/e2_004.blend** | arms |
+| **model/e2_005.blend** | leg |
+| **model/e2_005.blend** | knees/elbows |
+| **model/e2_128.blend** | textured model turnaround |
+| **model/images/e2_*.png** | ortho images |
+| **model/images/eye.png** | eye texture |
+| **model/images/texture.png** | mesh texture |
+
+---
+
 ## Shortcuts
 
 ### General
@@ -19,6 +38,9 @@ Resources for Boston Blender character modeling meetup.
 | **shift-A** | add object |
 | **TAB** | toggle object/edit mode |
 | **ctrl-A** | apply transformation |
+| **shift-D** | duplicate object |
+| **alt-D** | duplicate linked |
+| **ctrl-J** | join objects |
 
 
 ### Mesh Modeling
@@ -42,7 +64,6 @@ Resources for Boston Blender character modeling meetup.
 | **alt-S** | scale at control point |
 | **ctrl-T** | rotate at control point |
 | **ctrl-L** | select linked |
-| **shift-D** | duplicate |
 
 
 ## User Preferences
@@ -185,5 +206,114 @@ Multiple vertices can be welded together from the **Merge** popup menu, the shor
 In this case we want to fix a slit in the object. The screen left vertex is in the correct position. First select the right vertex then the left one and use the **At Last** option from the **Merge** menu to weld the vertices at the position of the last selected vertex.
 
 ![merge_verts](images/merge_verts.gif)
+
+---
+
+## Reset Transformations
+
+We want our model to be at the center of the field with **Location** set to [0,0,0], **Rotation** [0,0,0] and **Scale** [1,1,1].
+
+To reset transformations, use **Object/Apply** (shortcut **ctrl-A):
+
+![apply_transform](images/apply_transform.gif)
+
+---
+
+## Modeling a Symmetrical Mesh
+
+### X Mirror Option
+
+To make symmetrical edits on a mesh, turn on **X Mirror** in **Mesh Options** (note: must be in **Edit Mode** to see the **Mesh Options** menu).
+
+The **Topology Mirror** option tries to match components even if they are not perfectly aligned, but it seems unreliable on low resolution meshes. I found it best to leave it unchecked.
+
+![mesh_mirror](images/mesh_mirror.gif)
+
+Editing a mesh with **X Mirror**:
+
+![mesh_mirror_editing](images/mesh_mirror_editing.gif)
+
+**Note:** this will only work if the object is centered and symmetrical on its origin along the **X** axis:
+
+![sym_object](images/sym_object.jpg)
+
+### Mirrored Linked Duplicate
+
+While the **X Mirror** option works for simple edits, it cannot more complex operations like extrusions and the knife tool.
+
+A better workflow is to cut the model in half and create a mirrored linked duplicate that will be automatically updated.
+
+In the **front ortho** view select half of the faces (in **wireframe** mode, otherwise back faces are not selected) and delete them:
+
+![mesh_cut_half](images/mesh_cut_half.gif)
+
+Switch back to **Object Mode** (**TAB** key). Make a linked duplicate of the object (**Object/Duplicate Linked** menu, or **alt-D** shortcut). To make sure that the duplicate is perfectly aligned, hit the **ESC** key to exit the automatic move mode:
+
+![mesh_duplicate_linked](images/mesh_duplicate_linked.gif)
+
+Negate the **X** scale of the duplicate (set to -1.0):
+
+![mesh_mirror_x](images/mesh_mirror_x.gif)
+
+It's good practice to disable selection of the duplicate object and work on the original half:
+
+![mesh_disable_mirrored](images/mesh_disable_mirrored.gif)
+
+---
+
+### Joining Mirrored Object
+
+To join the mirrored halves back together:
+
+* in **Object Mode** select the two halves
+* join them together (**Object/Join** or **ctrl-J** shortcut)
+* at this point the vertices double vertices in the center, to check
+  * select a vertex by **clicking on it**, not with the box select tool
+  * move vertex to see that the object has a cut in it
+* in **Edit Mode** and **front ortho wireframe view** select the center vertices
+* fix the double vertices with **Vertex/Remove Double Vertices**
+* check with the above procedure that the mesh is welded together
+
+![mesh_join](images/mesh_join.gif)
+
+### Fixing Normals
+
+Half of the object was flipped, so those faces are now inside out. This will cause issues with rendering.
+
+To check and fix:
+
+* in **Edit Mode** turn on normal display in the **Overlays** menu
+  * the normals show which way a face is oriented
+  * we want all the blue "porcupine quills" pointing out
+* in **wireframe mode** select all the faces
+* use **Mesh/Normals/Recalculate Outward** to fix (the shortcut is **shift-N**)
+* turn off normal display
+
+![mesh_normals](images/mesh_normals.gif)
+
+
+---
+
+## Transform Orientation
+
+The **Global** transform orientation mode uses the scene's coordinate system. It's very useful to make sure that components don't moving on an undesired axis.
+
+The **Normal** mode adjusts the coordinate system to the shape of the object, so it can make shaping the object easier.
+
+The shortcut for the orientation menu is **,** (comma).
+
+![transform_ori](images/transform_ori.gif)
+
+---
+
+## Clipping Plane
+
+When working in close quarters (for example inside the head) the viewport might not show part of the model.
+
+To optimize viewport rendering, there is a minimum and maximum clipping plane, and objects are only shown within this range.
+
+To fix, set the **Clip Start** value smaller in the sidebar. Open with the small arrow in the top right of the viewport, or use the **N** shortcut.
+
+![clipping_plane](images/clipping_plane.gif)
 
 ---
