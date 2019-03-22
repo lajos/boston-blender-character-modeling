@@ -6,9 +6,31 @@ Resources for Boston Blender character modeling meetup.
 
 ---
 
+[![youtube turnaround](turnaround_youtube.jpg)](https://youtu.be/twBumdNC0Og)
+
+---
+
 ## Table of Contents
 
-[User Preferences](## User Preferences)
+* [List of Files](#List-of-Files)
+* [Shortcuts](#Shortcuts)
+* [User Preferences](#User-Preferences)
+* [Importing Reference Images](#Importing-Reference-Images)
+* [Extrusion](#Extrusion)
+* [Loop Cut](#Loop-Cut)
+* [Knife Tool](#Knife-Tool)
+* [Removing Edges](#Removing-Edges)
+* [Filling in Holes](#Filling-in-Holes)
+* [Merging Vertices](#Merging-Vertices)
+* [Reset Transformations](#Reset-Transformations)
+* [Working with a Symmetrical Mesh](#Working-with-a-Symmetrical-Mesh)
+  * [X Mirror Option](#X-Mirror-Option)
+  * [Mirrored Linked Duplicate](#Mirrored-Linked-Duplicate)
+  * [Joining Mirrored Object](#Joining-Mirrored-Object)
+  * [Fixing Normals](#Fixing-Normals)
+* [Transform Orientation](#Transform-Orientation)
+* [Clipping Plane](#Clipping-Plane)
+* [Circle Select](#Circle-Select)
 
 ---
 
@@ -106,7 +128,7 @@ I modified some shortcuts for easier and faster workflow.
 | **wheel** | dolly camera |
 | **F** | focus camera on selection |
 
-To use my preferences:
+Use my preferences:
 
 * close **blender**
 * go to the blender 2.80 config folder
@@ -120,7 +142,7 @@ This is what the config folder looks like on windows (the original `userpref.ble
 
 ![config_folder](images/config_folder.jpg)
 
-To import my keymap:
+Import my keymap:
 
 * in **blender** open **Edit/Preferences**
 * select the **Keymap** tab
@@ -163,7 +185,7 @@ Notice the **cursor**, **eye** and **camera** icons next to collections and obje
 
 ---
 
-## Extrude
+## Extrusion
 
 We'll use extrusion as one of the tools to add geometry to our model.
 
@@ -224,7 +246,7 @@ To fill in a hole (create a new face), select the vertices around the hole and u
 
 ---
 
-## Meging Vertices
+## Merging Vertices
 
 Multiple vertices can be welded together from the **Merge** popup menu, the shortcut is **M**.
 
@@ -244,7 +266,7 @@ To reset transformations, use **Object/Apply** (shortcut **ctrl-A):
 
 ---
 
-## Modeling a Symmetrical Mesh
+## Working with a Symmetrical Mesh
 
 ### X Mirror Option
 
@@ -264,7 +286,7 @@ Editing a mesh with **X Mirror**:
 
 ### Mirrored Linked Duplicate
 
-While the **X Mirror** option works for simple edits, it cannot more complex operations like extrusions and the knife tool.
+While the **X Mirror** option works for simple edits, it cannot handle more complex operations like extrusions and the knife tool.
 
 A better workflow is to cut the model in half and create a mirrored linked duplicate that will be automatically updated.
 
@@ -343,7 +365,7 @@ To fix, set the **Clip Start** value smaller in the sidebar. Open with the small
 
 ---
 
-## Paint (Circle) Select
+## Circle Select
 
 Make selections using a paint brush using the **Circle Select** tool (shortcut **C**).
 
