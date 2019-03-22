@@ -84,7 +84,7 @@ Resources for Boston Blender character modeling meetup.
 | **ctrl-R** | loop cut |
 | **K** | knife tool |
 | **alt-LMB** | select edge loop |
-| **, (comma)** | orientation menu |
+| **, (comma)** | transform orientation menu |
 | **M** | merge (join vertices) |
 | **V** | rip (split vertices) |
 | **shift-F** | fill polygon (make faces) |
