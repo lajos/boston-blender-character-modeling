@@ -6,10 +6,6 @@ Resources for Boston Blender character modeling meetup.
 
 ---
 
-[![youtube turnaround](images/turnaround_youtube.jpg)](https://youtu.be/twBumdNC0Og)
-
----
-
 ## Table of Contents
 
 * [List of Files](#List-of-Files)
@@ -31,6 +27,10 @@ Resources for Boston Blender character modeling meetup.
 * [Transform Orientation](#Transform-Orientation)
 * [Clipping Plane](#Clipping-Plane)
 * [Circle Select](#Circle-Select)
+
+---
+
+[![youtube turnaround](images/turnaround_youtube.jpg)](https://youtu.be/twBumdNC0Og)
 
 ---
 
