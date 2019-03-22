@@ -6,7 +6,7 @@ Resources for Boston Blender character modeling meetup.
 
 ---
 
-[![youtube turnaround](turnaround_youtube.jpg)](https://youtu.be/twBumdNC0Og)
+[![youtube turnaround](images/turnaround_youtube.jpg)](https://youtu.be/twBumdNC0Og)
 
 ---
 
