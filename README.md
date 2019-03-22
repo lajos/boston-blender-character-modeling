@@ -6,11 +6,18 @@ Resources for Boston Blender character modeling meetup.
 
 ---
 
+## Table of Contents
+
+[User Preferences](## User Preferences)
+
+---
+
 ## List of Files
 
 | File Name | Description |
 | --- | --- |
-| **userpref.blend** | user preferences |
+| **prefs/userpref.blend** | my user preferences |
+| **prefs/lajos.py** | my keymap |
 | **model/e2_001.blend** | base project with reference images |
 | **model/e2_2.79_001.blend** | base project with reference images, blender 2.79 |
 | **model/e2_002.blend** | pelvis |
@@ -101,20 +108,26 @@ I modified some shortcuts for easier and faster workflow.
 
 To use my preferences:
 
+* close **blender**
 * go to the blender 2.80 config folder
   * windows: `%APPDATA%\Blender Foundation\Blender\2.80\config`
   * osx: `/Users/_YOUR_USER_NAME_/Library/Application Support/Blender/2.80/config`
   * linux: `~/.config/blender/2.80/config`
 * make a backup of the `userpref.blend` file
 * copy the `userpref.blend` file from this project to the config folder
-* in **blender** select my keyboard profile (Lajos) in **Edit/Preferences/Keymap**
-  * you can still use the original **Blender** shortcuts by selecting that profile
 
-This is what the config folder looks like on windows (the original `userpref.blend` renamed to `userpref.blend.bak`; there might be more or less files in there):
+This is what the config folder looks like on windows (the original `userpref.blend` renamed to `userpref.blend.bak` (there might be more or less files in there):
 
 ![config_folder](images/config_folder.jpg)
 
-To change keymap:
+To import my keymap:
+
+* in **blender** open **Edit/Preferences**
+* select the **Keymap** tab
+* click **Import**
+* find and open **lajos.py**
+* select my keymap (will probably be selected automagically)
+* **Save Preferences**
 
 ![keymap_change](images/keymap.gif)
 
