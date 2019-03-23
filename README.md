@@ -19,6 +19,7 @@ Resources for Boston Blender character modeling meetup.
 * [Filling in Holes](#Filling-in-Holes)
 * [Merging Vertices](#Merging-Vertices)
 * [Reset Transformations](#Reset-Transformations)
+* [Scale by Number](#Scale-by-Number)
 * [Working with a Symmetrical Mesh](#Working-with-a-Symmetrical-Mesh)
   * [X Mirror Option](#X-Mirror-Option)
   * [Mirrored Linked Duplicate](#Mirrored-Linked-Duplicate)
@@ -265,6 +266,26 @@ We want our model to be at the center of the field with **Location** set to [0,0
 To reset transformations, use **Object/Apply** (shortcut **ctrl-A):
 
 ![apply_transform](images/apply_transform.gif)
+
+---
+
+## Scale by Number
+
+Sometimes we need to make a surface completely flat.
+
+A nifty trick is to select the components (in this example faces), and scale them to 0 along an axis.
+
+Step by step:
+
+* make a selection
+* enable scale mode by pressing **S** (with my keymap **shift-R** also works)
+* type the letter of the desired axis, **X**, **Y** or **Z** (x in this example)
+* type **0** (zero)
+* hit **ENTER**
+
+Note that this also works for moving (**shift-W** or default **G**) and rotating (**shift-E** or default **R**). You can also type any precise value, not just zero.
+
+![scale_by_number](images/scale_by_number.gif)
 
 ---
 
