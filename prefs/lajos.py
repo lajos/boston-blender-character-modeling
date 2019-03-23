@@ -4240,29 +4240,8 @@ keyconfig_data = \
        ],
       },
      ),
-    ("wm.tool_set_by_name",
-     {"type": 'W', "value": 'PRESS', "shift": True},
-     {"properties":
-      [("name", 'Select Box'),
-       ("cycle", True),
-       ],
-    "active":False,
-      },
-     ),
-    ("wm.tool_set_by_name",
-     {"type": 'Q', "value": 'PRESS'},
-     {"properties":
-      [("name", 'Select Box'),
-       ],
-      },
-     ),
-    ("wm.tool_set_by_name",
-     {"type": 'W', "value": 'PRESS'},
-     {"properties":
-      [("name", 'Move'),
-       ],
-      },
-     ),
+
+
     ("view3d.view_axis",
      {"type": 'ONE', "value": 'PRESS', "alt": True},
      {"properties":
@@ -4270,6 +4249,9 @@ keyconfig_data = \
        ],
       },
      ),
+
+    ("view3d.view_persportho", {"type": 'TWO', "value": 'PRESS', "alt": True}, None),
+
     ("view3d.view_axis",
      {"type": 'THREE', "value": 'PRESS', "alt": True},
      {"properties":
@@ -4277,21 +4259,8 @@ keyconfig_data = \
        ],
       },
      ),
-    ("view3d.view_persportho", {"type": 'TWO', "value": 'PRESS', "alt": True}, None),
-    ("wm.tool_set_by_name",
-     {"type": 'E', "value": 'PRESS'},
-     {"properties":
-      [("name", 'Rotate'),
-       ],
-      },
-     ),
-    ("wm.tool_set_by_name",
-     {"type": 'R', "value": 'PRESS'},
-     {"properties":
-      [("name", 'Scale'),
-       ],
-      },
-     ),
+
+
     ("view3d.view_axis",
      {"type": 'FOUR', "value": 'PRESS', "alt": True},
      {"properties":
@@ -4299,15 +4268,58 @@ keyconfig_data = \
        ],
       },
      ),
-    ("transform.resize", {"type": 'R', "value": 'PRESS', "shift": True}, None),
-    ("transform.translate", {"type": 'W', "value": 'PRESS', "shift": True}, None),
-    ("wm.tool_set_by_name",
-     {"type": 'Q', "value": 'PRESS', "shift": True},
+
+
+    #lajos Q
+    ("wm.tool_set_by_id",
+     {"type": 'Q', "value": 'PRESS'},
      {"properties":
-      [("name", 'Select Lasso'),
+      [("name", 'builtin.select_box'),
        ],
       },
      ),
+
+     #lajos Q
+    ("wm.tool_set_by_id",
+     {"type": 'Q', "value": 'PRESS', "shift": True},
+     {"properties":
+      [("name", 'builtin.select_lasso'),
+       ],
+      },
+     ),
+
+    #lajos
+    ("wm.tool_set_by_id",
+     {"type": 'W', "value": 'PRESS'},
+     {"properties":
+      [("name", 'builtin.move'),
+       ],
+      },
+     ),
+
+    ("transform.translate", {"type": 'W', "value": 'PRESS', "shift": True}, None),
+
+
+    #lajos
+    ("wm.tool_set_by_id",
+     {"type": 'E', "value": 'PRESS'},
+     {"properties":
+      [("name", 'builtin.rotate'),
+       ],
+      },
+     ),
+
+
+    ("wm.tool_set_by_id",
+     {"type": 'R', "value": 'PRESS'},
+     {"properties":
+      [("name", 'builtin.scale'),
+       ],
+      },
+     ),
+    ("transform.resize", {"type": 'R', "value": 'PRESS', "shift": True}, None),
+
+
     ],
    },
   ),
@@ -5022,15 +5034,15 @@ keyconfig_data = \
        ],
       },
      ),
-    ("wm.tool_set_by_name",
-     {"type": 'W', "value": 'PRESS'},
-     {"properties":
-      [("name", 'Select Box'),
-       ("cycle", True),
-       ],
-    "active":False,
-      },
-     ),
+    # ("wm.tool_set_by_id",
+    #  {"type": 'W', "value": 'PRESS'},
+    #  {"properties":
+    #   [("name", 'builtin.select_box'),
+    #    ("cycle", True),
+    #    ],
+    # "active":False,
+    #   },
+    #  ),
     ],
    },
   ),
@@ -7454,197 +7466,256 @@ keyconfig_data = \
  ("Toolbar Popup",
   {"space_type": 'EMPTY', "region_type": 'TEMPORARY'},
   {"items":
-   [("wm.tool_set_by_name",
-     {"type": 'W', "value": 'PRESS'},
-     {"properties":
-      [("name", 'Select'),
-       ],
-    "active":False,
-      },
-     ),
-    ("wm.tool_set_by_name",
-     {"type": 'T', "value": 'PRESS'},
-     {"properties":
-      [("name", 'Transform'),
-       ],
-      },
-     ),
-    ("wm.tool_set_by_name",
-     {"type": 'M', "value": 'PRESS'},
-     {"properties":
-      [("name", 'Measure'),
-       ],
-    "active":False,
-      },
-     ),
+   [
+
+#?
+    #  ("wm.tool_set_by_id",
+    #  {"type": 'W', "value": 'PRESS'},
+    #  {"properties":
+    #   [("name", 'Select'),
+    #    ],
+    # "active":False,
+    #   },
+    #  ),
+
+#?
+    # ("wm.tool_set_by_id",
+    #  {"type": 'T', "value": 'PRESS'},
+    #  {"properties":
+    #   [("name", 'Transform'),
+    #    ],
+    #   },
+    #  ),
+
+#?
+    # ("wm.tool_set_by_id",
+    #  {"type": 'M', "value": 'PRESS'},
+    #  {"properties":
+    #   [("name", 'Measure'),
+    #    ],
+    # "active":False,
+    #   },
+    #  ),
+
+
     ],
    },
   ),
  ("Toolbar Popup <temp>",
   {"space_type": 'EMPTY', "region_type": 'TEMPORARY'},
   {"items":
-   [("wm.tool_set_by_name",
-     {"type": 'W', "value": 'PRESS'},
-     {"properties":
-      [("name", 'Select'),
-       ],
-    "active":False,
-      },
-     ),
-    ("wm.tool_set_by_name",
-     {"type": 'T', "value": 'PRESS'},
-     {"properties":
-      [("name", 'Transform'),
-       ],
-      },
-     ),
-    ("wm.tool_set_by_name",
-     {"type": 'B', "value": 'PRESS'},
-     {"properties":
-      [("name", 'Select Box'),
-       ],
-      },
-     ),
-    ("wm.tool_set_by_name",
-     {"type": 'C', "value": 'PRESS'},
-     {"properties":
-      [("name", 'Select Circle'),
-       ],
-      },
-     ),
-    ("wm.tool_set_by_name",
-     {"type": 'D', "value": 'PRESS'},
-     {"properties":
-      [("name", 'Annotate'),
-       ],
-      },
-     ),
-    ("wm.tool_set_by_name",
-     {"type": 'NUMPAD_1', "value": 'PRESS'},
-     {"properties":
-      [("name", 'Select'),
-       ],
-      },
-     ),
-    ("wm.tool_set_by_name",
-     {"type": 'TWO', "value": 'PRESS'},
-     {"properties":
-      [("name", 'Select Lasso'),
-       ],
-      },
-     ),
-    ("wm.tool_set_by_name",
-     {"type": 'NUMPAD_2', "value": 'PRESS'},
-     {"properties":
-      [("name", 'Select Lasso'),
-       ],
-      },
-     ),
-    ("wm.tool_set_by_name",
-     {"type": 'THREE', "value": 'PRESS'},
-     {"properties":
-      [("name", 'Transform'),
-       ],
-      },
-     ),
-    ("wm.tool_set_by_name",
-     {"type": 'NUMPAD_3', "value": 'PRESS'},
-     {"properties":
-      [("name", 'Transform'),
-       ],
-      },
-     ),
-    ("wm.tool_set_by_name",
-     {"type": 'FOUR', "value": 'PRESS'},
-     {"properties":
-      [("name", 'Annotate Line'),
-       ],
-      },
-     ),
-    ("wm.tool_set_by_name",
-     {"type": 'NUMPAD_4', "value": 'PRESS'},
-     {"properties":
-      [("name", 'Annotate Line'),
-       ],
-      },
-     ),
-    ("wm.tool_set_by_name",
-     {"type": 'FIVE', "value": 'PRESS'},
-     {"properties":
-      [("name", 'Annotate Polygon'),
-       ],
-      },
-     ),
-    ("wm.tool_set_by_name",
-     {"type": 'NUMPAD_5', "value": 'PRESS'},
-     {"properties":
-      [("name", 'Annotate Polygon'),
-       ],
-      },
-     ),
-    ("wm.tool_set_by_name",
-     {"type": 'SIX', "value": 'PRESS'},
-     {"properties":
-      [("name", 'Annotate Eraser'),
-       ],
-      },
-     ),
-    ("wm.tool_set_by_name",
-     {"type": 'NUMPAD_6', "value": 'PRESS'},
-     {"properties":
-      [("name", 'Annotate Eraser'),
-       ],
-      },
-     ),
-    ("wm.tool_set_by_name",
-     {"type": 'SEVEN', "value": 'PRESS'},
-     {"properties":
-      [("name", 'Pinch'),
-       ],
-      },
-     ),
-    ("wm.tool_set_by_name",
-     {"type": 'NUMPAD_7', "value": 'PRESS'},
-     {"properties":
-      [("name", 'Pinch'),
-       ],
-      },
-     ),
-    ("wm.tool_set_by_name",
-     {"type": 'EIGHT', "value": 'PRESS'},
-     {"properties":
-      [("name", 'Relax'),
-       ],
-      },
-     ),
-    ("wm.tool_set_by_name",
-     {"type": 'NUMPAD_8', "value": 'PRESS'},
-     {"properties":
-      [("name", 'Relax'),
-       ],
-      },
-     ),
-    ("wm.tool_set_by_name",
-     {"type": 'NINE', "value": 'PRESS'},
-     {"properties":
-      [("name", 'Grab'),
-       ],
-      },
-     ),
-    ("wm.tool_set_by_name",
-     {"type": 'NUMPAD_9', "value": 'PRESS'},
-     {"properties":
-      [("name", 'Grab'),
-       ],
-      },
-     ),
-    ("wm.tool_set_by_name",
-     {"type": 'SPACE', "value": 'PRESS'},
-     {"properties":
-      [("name", 'Cursor'),
-       ],
-      },
-     ),
+   [
+
+#?
+    #  ("wm.tool_set_by_id",
+    #  {"type": 'W', "value": 'PRESS'},
+    #  {"properties":
+    #   [("name", 'Select'),
+    #    ],
+    # "active":False,
+    #   },
+    #  ),
+
+#?
+    # ("wm.tool_set_by_id",
+    #  {"type": 'T', "value": 'PRESS'},
+    #  {"properties":
+    #   [("name", 'Transform'),
+    #    ],
+    #   },
+    #  ),
+
+#?
+    # ("wm.tool_set_by_id",
+    #  {"type": 'B', "value": 'PRESS'},
+    #  {"properties":
+    #   [("name", 'Select Box'),
+    #    ],
+    #   },
+    #  ),
+
+#?
+    # ("wm.tool_set_by_id",
+    #  {"type": 'C', "value": 'PRESS'},
+    #  {"properties":
+    #   [("name", 'Select Circle'),
+    #    ],
+    #   },
+    #  ),
+
+#?
+    # ("wm.tool_set_by_id",
+    #  {"type": 'D', "value": 'PRESS'},
+    #  {"properties":
+    #   [("name", 'Annotate'),
+    #    ],
+    #   },
+    #  ),
+
+#?
+    # ("wm.tool_set_by_id",
+    #  {"type": 'NUMPAD_1', "value": 'PRESS'},
+    #  {"properties":
+    #   [("name", 'Select'),
+    #    ],
+    #   },
+    #  ),
+
+#?
+    # ("wm.tool_set_by_id",
+    #  {"type": 'TWO', "value": 'PRESS'},
+    #  {"properties":
+    #   [("name", 'Select Lasso'),
+    #    ],
+    #   },
+    #  ),
+
+#?
+    # ("wm.tool_set_by_id",
+    #  {"type": 'NUMPAD_2', "value": 'PRESS'},
+    #  {"properties":
+    #   [("name", 'Select Lasso'),
+    #    ],
+    #   },
+    #  ),
+
+#?
+    # ("wm.tool_set_by_id",
+    #  {"type": 'THREE', "value": 'PRESS'},
+    #  {"properties":
+    #   [("name", 'Transform'),
+    #    ],
+    #   },
+    #  ),
+
+#?
+    # ("wm.tool_set_by_id",
+    #  {"type": 'NUMPAD_3', "value": 'PRESS'},
+    #  {"properties":
+    #   [("name", 'Transform'),
+    #    ],
+    #   },
+    #  ),
+
+
+#?
+    # ("wm.tool_set_by_id",
+    #  {"type": 'FOUR', "value": 'PRESS'},
+    #  {"properties":
+    #   [("name", 'Annotate Line'),
+    #    ],
+    #   },
+    #  ),
+
+#?
+    # ("wm.tool_set_by_id",
+    #  {"type": 'NUMPAD_4', "value": 'PRESS'},
+    #  {"properties":
+    #   [("name", 'Annotate Line'),
+    #    ],
+    #   },
+    #  ),
+
+#?
+    # ("wm.tool_set_by_id",
+    #  {"type": 'FIVE', "value": 'PRESS'},
+    #  {"properties":
+    #   [("name", 'Annotate Polygon'),
+    #    ],
+    #   },
+    #  ),
+
+#?
+    # ("wm.tool_set_by_id",
+    #  {"type": 'NUMPAD_5', "value": 'PRESS'},
+    #  {"properties":
+    #   [("name", 'Annotate Polygon'),
+    #    ],
+    #   },
+    #  ),
+
+#?
+    # ("wm.tool_set_by_id",
+    #  {"type": 'SIX', "value": 'PRESS'},
+    #  {"properties":
+    #   [("name", 'Annotate Eraser'),
+    #    ],
+    #   },
+    #  ),
+
+#?
+    # ("wm.tool_set_by_id",
+    #  {"type": 'NUMPAD_6', "value": 'PRESS'},
+    #  {"properties":
+    #   [("name", 'Annotate Eraser'),
+    #    ],
+    #   },
+    #  ),
+
+#?
+    # ("wm.tool_set_by_id",
+    #  {"type": 'SEVEN', "value": 'PRESS'},
+    #  {"properties":
+    #   [("name", 'Pinch'),
+    #    ],
+    #   },
+    #  ),
+
+#?
+    # ("wm.tool_set_by_id",
+    #  {"type": 'NUMPAD_7', "value": 'PRESS'},
+    #  {"properties":
+    #   [("name", 'Pinch'),
+    #    ],
+    #   },
+    #  ),
+
+#?
+    # ("wm.tool_set_by_id",
+    #  {"type": 'EIGHT', "value": 'PRESS'},
+    #  {"properties":
+    #   [("name", 'Relax'),
+    #    ],
+    #   },
+    #  ),
+
+#?
+    # ("wm.tool_set_by_id",
+    #  {"type": 'NUMPAD_8', "value": 'PRESS'},
+    #  {"properties":
+    #   [("name", 'Relax'),
+    #    ],
+    #   },
+    #  ),
+
+#?
+    # ("wm.tool_set_by_id",
+    #  {"type": 'NINE', "value": 'PRESS'},
+    #  {"properties":
+    #   [("name", 'Grab'),
+    #    ],
+    #   },
+    #  ),
+
+#?
+    # ("wm.tool_set_by_id",
+    #  {"type": 'NUMPAD_9', "value": 'PRESS'},
+    #  {"properties":
+    #   [("name", 'Grab'),
+    #    ],
+    #   },
+    #  ),
+
+
+#?
+    # ("wm.tool_set_by_id",
+    #  {"type": 'SPACE', "value": 'PRESS'},
+    #  {"properties":
+    #   [("name", 'Cursor'),
+    #    ],
+    #   },
+    #  ),
+
     ("ui.button_execute",
      {"type": 'SPACE', "value": 'RELEASE', "any": True},
      {"properties":
@@ -7652,7 +7723,11 @@ keyconfig_data = \
        ],
       },
      ),
-    ("wm.tool_set_by_name", {"type": 'SPACE', "value": 'RELEASE', "any": True}, None),
+
+
+
+    ("wm.tool_set_by_id", {"type": 'SPACE', "value": 'RELEASE', "any": True}, None),
+
     ],
    },
   ),

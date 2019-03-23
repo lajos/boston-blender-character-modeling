@@ -130,11 +130,13 @@ I modified some shortcuts for easier and faster workflow.
 
 Use my preferences:
 
+* open **blender**
 * close **blender**
 * go to the blender 2.80 config folder
   * windows: `%APPDATA%\Blender Foundation\Blender\2.80\config`
   * osx: `/Users/_YOUR_USER_NAME_/Library/Application Support/Blender/2.80/config`
   * linux: `~/.config/blender/2.80/config`
+  * note: to find config folder from blender python: `bpy.utils.user_resource('CONFIG')`
 * make a backup of the `userpref.blend` file
 * copy the `userpref.blend` file from this project to the config folder
 
