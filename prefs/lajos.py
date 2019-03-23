@@ -7468,34 +7468,31 @@ keyconfig_data = \
   {"items":
    [
 
-#?
-    #  ("wm.tool_set_by_id",
-    #  {"type": 'W', "value": 'PRESS'},
-    #  {"properties":
-    #   [("name", 'Select'),
-    #    ],
-    # "active":False,
-    #   },
-    #  ),
+     ("wm.tool_set_by_id",
+     {"type": 'W', "value": 'PRESS'},
+     {"properties":
+      [("name", 'builtin.select'),
+       ],
+    "active":False,
+      },
+     ),
 
-#?
-    # ("wm.tool_set_by_id",
-    #  {"type": 'T', "value": 'PRESS'},
-    #  {"properties":
-    #   [("name", 'Transform'),
-    #    ],
-    #   },
-    #  ),
+    ("wm.tool_set_by_id",
+     {"type": 'T', "value": 'PRESS'},
+     {"properties":
+      [("name", 'builtin.transform'),
+       ],
+      },
+     ),
 
-#?
-    # ("wm.tool_set_by_id",
-    #  {"type": 'M', "value": 'PRESS'},
-    #  {"properties":
-    #   [("name", 'Measure'),
-    #    ],
-    # "active":False,
-    #   },
-    #  ),
+
+    ("wm.tool_set_by_id",
+     {"type": 'M', "value": 'PRESS'},
+     {"properties":
+      [("name", 'builtin.measure'),
+       ],
+      },
+     ),
 
 
     ],
@@ -7506,215 +7503,444 @@ keyconfig_data = \
   {"items":
    [
 
-#?
-    #  ("wm.tool_set_by_id",
-    #  {"type": 'W', "value": 'PRESS'},
-    #  {"properties":
-    #   [("name", 'Select'),
-    #    ],
-    # "active":False,
-    #   },
-    #  ),
 
-#?
-    # ("wm.tool_set_by_id",
-    #  {"type": 'T', "value": 'PRESS'},
-    #  {"properties":
-    #   [("name", 'Transform'),
-    #    ],
-    #   },
-    #  ),
+     ("wm.tool_set_by_id",
+     {"type": 'W', "value": 'PRESS'},
+     {"properties":
+      [("name", 'builtin.select'),
+       ],
+    "active":False,
+      },
+     ),
 
-#?
-    # ("wm.tool_set_by_id",
-    #  {"type": 'B', "value": 'PRESS'},
-    #  {"properties":
-    #   [("name", 'Select Box'),
-    #    ],
-    #   },
-    #  ),
+    ("wm.tool_set_by_id",
+     {"type": 'T', "value": 'PRESS'},
+     {"properties":
+      [("name", 'builtin.transform'),
+       ],
+      },
+     ),
 
-#?
-    # ("wm.tool_set_by_id",
-    #  {"type": 'C', "value": 'PRESS'},
-    #  {"properties":
-    #   [("name", 'Select Circle'),
-    #    ],
-    #   },
-    #  ),
-
-#?
-    # ("wm.tool_set_by_id",
-    #  {"type": 'D', "value": 'PRESS'},
-    #  {"properties":
-    #   [("name", 'Annotate'),
-    #    ],
-    #   },
-    #  ),
-
-#?
-    # ("wm.tool_set_by_id",
-    #  {"type": 'NUMPAD_1', "value": 'PRESS'},
-    #  {"properties":
-    #   [("name", 'Select'),
-    #    ],
-    #   },
-    #  ),
-
-#?
-    # ("wm.tool_set_by_id",
-    #  {"type": 'TWO', "value": 'PRESS'},
-    #  {"properties":
-    #   [("name", 'Select Lasso'),
-    #    ],
-    #   },
-    #  ),
-
-#?
-    # ("wm.tool_set_by_id",
-    #  {"type": 'NUMPAD_2', "value": 'PRESS'},
-    #  {"properties":
-    #   [("name", 'Select Lasso'),
-    #    ],
-    #   },
-    #  ),
-
-#?
-    # ("wm.tool_set_by_id",
-    #  {"type": 'THREE', "value": 'PRESS'},
-    #  {"properties":
-    #   [("name", 'Transform'),
-    #    ],
-    #   },
-    #  ),
-
-#?
-    # ("wm.tool_set_by_id",
-    #  {"type": 'NUMPAD_3', "value": 'PRESS'},
-    #  {"properties":
-    #   [("name", 'Transform'),
-    #    ],
-    #   },
-    #  ),
-
-
-#?
-    # ("wm.tool_set_by_id",
-    #  {"type": 'FOUR', "value": 'PRESS'},
-    #  {"properties":
-    #   [("name", 'Annotate Line'),
-    #    ],
-    #   },
-    #  ),
-
-#?
-    # ("wm.tool_set_by_id",
-    #  {"type": 'NUMPAD_4', "value": 'PRESS'},
-    #  {"properties":
-    #   [("name", 'Annotate Line'),
-    #    ],
-    #   },
-    #  ),
-
-#?
-    # ("wm.tool_set_by_id",
-    #  {"type": 'FIVE', "value": 'PRESS'},
-    #  {"properties":
-    #   [("name", 'Annotate Polygon'),
-    #    ],
-    #   },
-    #  ),
-
-#?
-    # ("wm.tool_set_by_id",
-    #  {"type": 'NUMPAD_5', "value": 'PRESS'},
-    #  {"properties":
-    #   [("name", 'Annotate Polygon'),
-    #    ],
-    #   },
-    #  ),
-
-#?
-    # ("wm.tool_set_by_id",
-    #  {"type": 'SIX', "value": 'PRESS'},
-    #  {"properties":
-    #   [("name", 'Annotate Eraser'),
-    #    ],
-    #   },
-    #  ),
-
-#?
-    # ("wm.tool_set_by_id",
-    #  {"type": 'NUMPAD_6', "value": 'PRESS'},
-    #  {"properties":
-    #   [("name", 'Annotate Eraser'),
-    #    ],
-    #   },
-    #  ),
-
-#?
-    # ("wm.tool_set_by_id",
-    #  {"type": 'SEVEN', "value": 'PRESS'},
-    #  {"properties":
-    #   [("name", 'Pinch'),
-    #    ],
-    #   },
-    #  ),
-
-#?
-    # ("wm.tool_set_by_id",
-    #  {"type": 'NUMPAD_7', "value": 'PRESS'},
-    #  {"properties":
-    #   [("name", 'Pinch'),
-    #    ],
-    #   },
-    #  ),
-
-#?
-    # ("wm.tool_set_by_id",
-    #  {"type": 'EIGHT', "value": 'PRESS'},
-    #  {"properties":
-    #   [("name", 'Relax'),
-    #    ],
-    #   },
-    #  ),
-
-#?
-    # ("wm.tool_set_by_id",
-    #  {"type": 'NUMPAD_8', "value": 'PRESS'},
-    #  {"properties":
-    #   [("name", 'Relax'),
-    #    ],
-    #   },
-    #  ),
-
-#?
-    # ("wm.tool_set_by_id",
-    #  {"type": 'NINE', "value": 'PRESS'},
-    #  {"properties":
-    #   [("name", 'Grab'),
-    #    ],
-    #   },
-    #  ),
-
-#?
-    # ("wm.tool_set_by_id",
-    #  {"type": 'NUMPAD_9', "value": 'PRESS'},
-    #  {"properties":
-    #   [("name", 'Grab'),
-    #    ],
-    #   },
-    #  ),
-
-
-#?
-    # ("wm.tool_set_by_id",
-    #  {"type": 'SPACE', "value": 'PRESS'},
-    #  {"properties":
-    #   [("name", 'Cursor'),
-    #    ],
-    #   },
-    #  ),
+    ("wm.tool_set_by_id",
+     {"type": 'M', "value": 'PRESS'},
+     {"properties":
+      [("name", 'builtin.measure'),
+       ],
+      },
+     ),
+    ("wm.tool_set_by_id",
+     {"type": 'Q', "value": 'PRESS'},
+     {"properties":
+      [("name", 'builtin.select_box'),
+       ],
+      },
+     ),
+    ("wm.tool_set_by_id",
+     {"type": 'C', "value": 'PRESS'},
+     {"properties":
+      [("name", 'builtin.select_circle'),
+       ],
+      },
+     ),
+    ("wm.tool_set_by_id",
+     {"type": 'Q', "value": 'PRESS', "shift": True},
+     {"properties":
+      [("name", 'builtin.select_lasso'),
+       ],
+      },
+     ),
+    ("wm.tool_set_by_id",
+     {"type": 'G', "value": 'PRESS'},
+     {"properties":
+      [("name", 'builtin.move'),
+       ],
+      },
+     ),
+    ("wm.tool_set_by_id",
+     {"type": 'R', "value": 'PRESS'},
+     {"properties":
+      [("name", 'builtin.rotate'),
+       ],
+      },
+     ),
+    ("wm.tool_set_by_id",
+     {"type": 'S', "value": 'PRESS'},
+     {"properties":
+      [("name", 'builtin.scale'),
+       ],
+      },
+     ),
+    ("wm.tool_set_by_id",
+     {"type": 'E', "value": 'PRESS', "ctrl": True},
+     {"properties":
+      [("name", 'builtin.extrude_region'),
+       ],
+      },
+     ),
+    ("wm.tool_set_by_id",
+     {"type": 'I', "value": 'PRESS'},
+     {"properties":
+      [("name", 'builtin.inset_faces'),
+       ],
+      },
+     ),
+    ("wm.tool_set_by_id",
+     {"type": 'B', "value": 'PRESS', "ctrl": True},
+     {"properties":
+      [("name", 'builtin.bevel'),
+       ],
+      },
+     ),
+    ("wm.tool_set_by_id",
+     {"type": 'R', "value": 'PRESS', "ctrl": True},
+     {"properties":
+      [("name", 'builtin.loop_cut'),
+       ],
+      },
+     ),
+    ("wm.tool_set_by_id",
+     {"type": 'R', "value": 'PRESS', "shift": True, "ctrl": True},
+     {"properties":
+      [("name", 'builtin.offset_edge_loop_cut'),
+       ],
+      },
+     ),
+    ("wm.tool_set_by_id",
+     {"type": 'K', "value": 'PRESS'},
+     {"properties":
+      [("name", 'builtin.knife'),
+       ],
+      },
+     ),
+    ("wm.tool_set_by_id",
+     {"type": 'V', "value": 'PRESS', "shift": True},
+     {"properties":
+      [("name", 'builtin.vertex_slide'),
+       ],
+      },
+     ),
+    ("wm.tool_set_by_id",
+     {"type": 'S', "value": 'PRESS', "alt": True},
+     {"properties":
+      [("name", 'builtin.shrink_fatten'),
+       ],
+      },
+     ),
+    ("wm.tool_set_by_id",
+     {"type": 'S', "value": 'PRESS', "shift": True, "ctrl": True, "alt": True},
+     {"properties":
+      [("name", 'builtin.shear'),
+       ],
+      },
+     ),
+    ("wm.tool_set_by_id",
+     {"type": 'S', "value": 'PRESS', "shift": True, "alt": True},
+     {"properties":
+      [("name", 'builtin.to_sphere'),
+       ],
+      },
+     ),
+    ("wm.tool_set_by_id",
+     {"type": 'V', "value": 'PRESS'},
+     {"properties":
+      [("name", 'builtin.rip_region'),
+       ],
+      },
+     ),
+    ("wm.tool_set_by_id",
+     {"type": 'D', "value": 'PRESS', "alt": True},
+     {"properties":
+      [("name", 'builtin.rip_edge'),
+       ],
+      },
+     ),
+    ("wm.tool_set_by_id",
+     {"type": 'D', "value": 'PRESS'},
+     {"properties":
+      [("name", 'builtin.annotate'),
+       ],
+      },
+     ),
+    ("wm.tool_set_by_id",
+     {"type": 'ONE', "value": 'PRESS'},
+     {"properties":
+      [("name", 'builtin.select'),
+       ],
+      },
+     ),
+    ("wm.tool_set_by_id",
+     {"type": 'NUMPAD_1', "value": 'PRESS'},
+     {"properties":
+      [("name", 'builtin.select'),
+       ],
+      },
+     ),
+    ("wm.tool_set_by_id",
+     {"type": 'TWO', "value": 'PRESS'},
+     {"properties":
+      [("name", 'builtin.transform'),
+       ],
+      },
+     ),
+    ("wm.tool_set_by_id",
+     {"type": 'NUMPAD_2', "value": 'PRESS'},
+     {"properties":
+      [("name", 'builtin.transform'),
+       ],
+      },
+     ),
+    ("wm.tool_set_by_id",
+     {"type": 'THREE', "value": 'PRESS'},
+     {"properties":
+      [("name", 'builtin.scale_cage'),
+       ],
+      },
+     ),
+    ("wm.tool_set_by_id",
+     {"type": 'NUMPAD_3', "value": 'PRESS'},
+     {"properties":
+      [("name", 'builtin.scale_cage'),
+       ],
+      },
+     ),
+    ("wm.tool_set_by_id",
+     {"type": 'FOUR', "value": 'PRESS'},
+     {"properties":
+      [("name", 'builtin.annotate_line'),
+       ],
+      },
+     ),
+    ("wm.tool_set_by_id",
+     {"type": 'NUMPAD_4', "value": 'PRESS'},
+     {"properties":
+      [("name", 'builtin.annotate_line'),
+       ],
+      },
+     ),
+    ("wm.tool_set_by_id",
+     {"type": 'FIVE', "value": 'PRESS'},
+     {"properties":
+      [("name", 'builtin.annotate_polygon'),
+       ],
+      },
+     ),
+    ("wm.tool_set_by_id",
+     {"type": 'NUMPAD_5', "value": 'PRESS'},
+     {"properties":
+      [("name", 'builtin.annotate_polygon'),
+       ],
+      },
+     ),
+    ("wm.tool_set_by_id",
+     {"type": 'SIX', "value": 'PRESS'},
+     {"properties":
+      [("name", 'builtin.annotate_eraser'),
+       ],
+      },
+     ),
+    ("wm.tool_set_by_id",
+     {"type": 'NUMPAD_6', "value": 'PRESS'},
+     {"properties":
+      [("name", 'builtin.annotate_eraser'),
+       ],
+      },
+     ),
+    ("wm.tool_set_by_id",
+     {"type": 'SEVEN', "value": 'PRESS'},
+     {"properties":
+      [("name", 'builtin.measure'),
+       ],
+      },
+     ),
+    ("wm.tool_set_by_id",
+     {"type": 'NUMPAD_7', "value": 'PRESS'},
+     {"properties":
+      [("name", 'builtin.measure'),
+       ],
+      },
+     ),
+    ("wm.tool_set_by_id",
+     {"type": 'EIGHT', "value": 'PRESS'},
+     {"properties":
+      [("name", 'builtin.add_cube'),
+       ],
+      },
+     ),
+    ("wm.tool_set_by_id",
+     {"type": 'NUMPAD_8', "value": 'PRESS'},
+     {"properties":
+      [("name", 'builtin.add_cube'),
+       ],
+      },
+     ),
+    ("wm.tool_set_by_id",
+     {"type": 'NINE', "value": 'PRESS'},
+     {"properties":
+      [("name", 'builtin.extrude_along_normals'),
+       ],
+      },
+     ),
+    ("wm.tool_set_by_id",
+     {"type": 'NUMPAD_9', "value": 'PRESS'},
+     {"properties":
+      [("name", 'builtin.extrude_along_normals'),
+       ],
+      },
+     ),
+    ("wm.tool_set_by_id",
+     {"type": 'ZERO', "value": 'PRESS'},
+     {"properties":
+      [("name", 'builtin.extrude_individual'),
+       ],
+      },
+     ),
+    ("wm.tool_set_by_id",
+     {"type": 'NUMPAD_0', "value": 'PRESS'},
+     {"properties":
+      [("name", 'builtin.extrude_individual'),
+       ],
+      },
+     ),
+    ("wm.tool_set_by_id",
+     {"type": 'ONE', "value": 'PRESS', "shift": True},
+     {"properties":
+      [("name", 'builtin.extrude_to_cursor'),
+       ],
+      },
+     ),
+    ("wm.tool_set_by_id",
+     {"type": 'NUMPAD_1', "value": 'PRESS', "shift": True},
+     {"properties":
+      [("name", 'builtin.extrude_to_cursor'),
+       ],
+      },
+     ),
+    ("wm.tool_set_by_id",
+     {"type": 'TWO', "value": 'PRESS', "shift": True},
+     {"properties":
+      [("name", 'builtin.bisect'),
+       ],
+      },
+     ),
+    ("wm.tool_set_by_id",
+     {"type": 'NUMPAD_2', "value": 'PRESS', "shift": True},
+     {"properties":
+      [("name", 'builtin.bisect'),
+       ],
+      },
+     ),
+    ("wm.tool_set_by_id",
+     {"type": 'THREE', "value": 'PRESS', "shift": True},
+     {"properties":
+      [("name", 'builtin.poly_build'),
+       ],
+      },
+     ),
+    ("wm.tool_set_by_id",
+     {"type": 'NUMPAD_3', "value": 'PRESS', "shift": True},
+     {"properties":
+      [("name", 'builtin.poly_build'),
+       ],
+      },
+     ),
+    ("wm.tool_set_by_id",
+     {"type": 'FOUR', "value": 'PRESS', "shift": True},
+     {"properties":
+      [("name", 'builtin.spin'),
+       ],
+      },
+     ),
+    ("wm.tool_set_by_id",
+     {"type": 'NUMPAD_4', "value": 'PRESS', "shift": True},
+     {"properties":
+      [("name", 'builtin.spin'),
+       ],
+      },
+     ),
+    ("wm.tool_set_by_id",
+     {"type": 'FIVE', "value": 'PRESS', "shift": True},
+     {"properties":
+      [("name", 'builtin.spin_duplicates'),
+       ],
+      },
+     ),
+    ("wm.tool_set_by_id",
+     {"type": 'NUMPAD_5', "value": 'PRESS', "shift": True},
+     {"properties":
+      [("name", 'builtin.spin_duplicates'),
+       ],
+      },
+     ),
+    ("wm.tool_set_by_id",
+     {"type": 'SIX', "value": 'PRESS', "shift": True},
+     {"properties":
+      [("name", 'builtin.smooth'),
+       ],
+      },
+     ),
+    ("wm.tool_set_by_id",
+     {"type": 'NUMPAD_6', "value": 'PRESS', "shift": True},
+     {"properties":
+      [("name", 'builtin.smooth'),
+       ],
+      },
+     ),
+    ("wm.tool_set_by_id",
+     {"type": 'SEVEN', "value": 'PRESS', "shift": True},
+     {"properties":
+      [("name", 'builtin.randomize'),
+       ],
+      },
+     ),
+    ("wm.tool_set_by_id",
+     {"type": 'NUMPAD_7', "value": 'PRESS', "shift": True},
+     {"properties":
+      [("name", 'builtin.randomize'),
+       ],
+      },
+     ),
+    ("wm.tool_set_by_id",
+     {"type": 'EIGHT', "value": 'PRESS', "shift": True},
+     {"properties":
+      [("name", 'builtin.edge_slide'),
+       ],
+      },
+     ),
+    ("wm.tool_set_by_id",
+     {"type": 'NUMPAD_8', "value": 'PRESS', "shift": True},
+     {"properties":
+      [("name", 'builtin.edge_slide'),
+       ],
+      },
+     ),
+    ("wm.tool_set_by_id",
+     {"type": 'NINE', "value": 'PRESS', "shift": True},
+     {"properties":
+      [("name", 'builtin.push_pull'),
+       ],
+      },
+     ),
+    ("wm.tool_set_by_id",
+     {"type": 'NUMPAD_9', "value": 'PRESS', "shift": True},
+     {"properties":
+      [("name", 'builtin.push_pull'),
+       ],
+      },
+     ),
+    ("wm.tool_set_by_id",
+     {"type": 'SPACE', "value": 'PRESS'},
+     {"properties":
+      [("name", 'builtin.cursor'),
+       ],
+      },
+     ),
+    ("ui.button_execute",
+     {"type": 'SPACE', "value": 'RELEASE', "any": True},
+     {"properties":
+      [("skip_depressed", True),
+       ],
+      },
+     ),
 
     ("ui.button_execute",
      {"type": 'SPACE', "value": 'RELEASE', "any": True},
