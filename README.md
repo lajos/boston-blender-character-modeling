@@ -303,7 +303,7 @@ To view (and render) the mesh at a higher resolution, we can use the subdivision
 * you can adjust **View** and **Render** subdivision level
 
 Notes:
-* subdivision surface will make all edges round
+* the subdivision surface modifier will make all edges round
   * to preserve edges, add extra edge loops
 * it's only a modifier, the mesh stays at the original resolution
 
