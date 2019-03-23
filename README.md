@@ -300,9 +300,12 @@ To view (and render) the mesh at a higher resolution, we can use the subdivision
 * go to the **Modifier** panel (wrench icon)
 * from the **Add Modifier** menu select **Subdisivion Surface**
 * the **monitor** button turns the modifier on/off in the viewport
-* you can adjust **View** and **Render** subdivision numbers
+* you can adjust **View** and **Render** subdivision level
 
-Note: subdivision surface will make all edges round. To preserve edges, add extra edge loops.
+Notes:
+* subdivision surface will make all edges round
+  * to preserve edges, add extra edge loops
+* it's only a modifier, the mesh stays at the original resolution
 
 ![subdivision](images/subdivision.gif)
 
@@ -318,7 +321,7 @@ To set smooth shading for faces:
 
 * in **Edit Mode** select all faces (use **wireframe** view to also select back faces)
 * in the **Face** menu select **Shade Smooth**
-  * Note: select **Shade Flat** to revert to flat shading
+  * note: select **Shade Flat** to revert to flat shading
 
 ![smooth_shade](images/smooth_shade.gif)
 
