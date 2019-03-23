@@ -65,7 +65,7 @@ Resources for Boston Blender character modeling meetup.
 | **T** | toggle toolbar |
 | **Z** | shading mode |
 | **shift-Z** | toggle wireframe/solid shading |
-| **alt-Z** | toggle xray shading |
+| **alt-Z** | toggle x-ray shading |
 | **shift-A** | add object |
 | **TAB** | toggle object/edit mode |
 | **ctrl-A** | apply transformation |
@@ -195,7 +195,7 @@ First make sure that you are in **Edit Mode** (**TAB** key) and in **Face** sele
 
 Select a face or multiple faces. You can use the **Face/Extrude Faces** menu or **ctrl-E** shortcut.
 
-After the extrusion you can move the new faces, or for more control hit **ESC** to exit the automatic move mode and use the move tool (**W** key). You can also scale and rotate the new faces.
+After the extrusion, you can move the new faces, or for more control, hit **ESC** to exit the automatic move mode and use the move tool (**W** key). You can also scale and rotate the new faces.
 
 ![extrude](images/extrude.gif)
 
@@ -207,7 +207,7 @@ We can add resolution to our model by creating new edge loops with the **Loop Cu
 
 Make sure **Edge** selection mode is active.
 
-The loop cut tool is context sensitive, it will create new loops based on the orientation of the closest edge to the mouse cursor.
+The loop cut tool is context sensitive. It will create new loops based on the orientation of the closest edge to the mouse cursor.
 
 When the loop cut tool is active, the number of new loops can be adjusted by turning the mouse wheel. After clicking the **LMB**, the new edges can be moved, or to leave them in the center, hit the **ESC** key.
 
@@ -248,9 +248,9 @@ To fill in a hole (create a new face), select the vertices around the hole and u
 
 ## Merging Vertices
 
-Multiple vertices can be welded together from the **Merge** popup menu, the shortcut is **M**.
+Multiple vertices can be welded together from the **Merge** popup menu. The shortcut is **M**.
 
-In this case we want to fix a slit in the object. The screen left vertex is in the correct position. First select the right vertex then the left one and use the **At Last** option from the **Merge** menu to weld the vertices at the position of the last selected vertex.
+In this case, we want to fix a slit in the object. The screen left vertex is in the correct position. First select the right vertex, then the left one, and use the **At Last** option from the **Merge** menu to weld the vertices at the position of the last selected vertex.
 
 ![merge_verts](images/merge_verts.gif)
 
@@ -314,10 +314,10 @@ To join the mirrored halves back together:
 
 * in **Object Mode** select the two halves
 * join them together (**Object/Join** or **ctrl-J** shortcut)
-* at this point the vertices double vertices in the center, to check
+* at this point, there are double vertices in the center. To check:
   * select a vertex by **clicking on it**, not with the box select tool
-  * move vertex to see that the object has a cut in it
-* in **Edit Mode** and **front ortho wireframe view** select the center vertices
+  * move vertex to see that the object is split
+* in **Edit Mode** and **front ortho wireframe view**, select the center vertices
 * fix the double vertices with **Vertex/Remove Double Vertices**
 * check with the above procedure that the mesh is welded together
 
@@ -332,7 +332,7 @@ To check and fix:
 * in **Edit Mode** turn on normal display in the **Overlays** menu
   * the normals show which way a face is oriented
   * we want all the blue "porcupine quills" pointing out
-* in **wireframe mode** select all the faces
+* in **wireframe mode**, select all the faces
 * use **Mesh/Normals/Recalculate Outward** to fix (the shortcut is **shift-N**)
 * turn off normal display
 
@@ -355,7 +355,7 @@ The shortcut for the orientation menu is **,** (comma).
 
 ## Clipping Plane
 
-When working in close quarters (for example inside the head) the viewport might not show part of the model.
+When working in close quarters (for example inside the head), the viewport might not show part of the model.
 
 To optimize viewport rendering, there is a minimum and maximum clipping plane, and objects are only shown within this range.
 
@@ -367,7 +367,7 @@ To fix, set the **Clip Start** value smaller in the sidebar. Open with the small
 
 ## Circle Select
 
-Make selections using a paint brush using the **Circle Select** tool (shortcut **C**).
+Make selections with a paint brush using the **Circle Select** tool (shortcut **C**).
 
 | Button | Action |
 | -- | -- |
@@ -379,5 +379,7 @@ Make selections using a paint brush using the **Circle Select** tool (shortcut *
 ![circle_select](images/circle_select.gif)
 
 ---
+
+_Now you know everything..._
 
 
