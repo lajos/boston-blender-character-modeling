@@ -132,6 +132,7 @@ I modified some shortcuts for easier and faster workflow.
 Use my preferences:
 
 * open **blender**
+* save preferences (in **Edit/Preferences**)
 * close **blender**
 * go to the blender 2.80 config folder
   * windows: `%APPDATA%\Blender Foundation\Blender\2.80\config`
@@ -286,6 +287,38 @@ Step by step:
 Note that this also works for moving (**shift-W** or default **G**) and rotating (**shift-E** or default **R**). You can also type any precise value, not just zero.
 
 ![scale_by_number](images/scale_by_number.gif)
+
+---
+
+## Adding a Subdivision Modifier
+
+To view (and render) the mesh at a higher resolution, we can use the subdivision modifier.
+
+* select mesh in **object mode**
+* go to the **Modifier** panel (wrench icon)
+* from the **Add Modifier** menu select **Subdisivion Surface**
+* the **monitor** button turns the modifier on/off in the viewport
+* you can adjust **View** and **Render** subdivision numbers
+
+Note: subdivision surface will make all edges round. To preserve edges, add extra edge loops.
+
+![subdivision](images/subdivision.gif)
+
+---
+
+## Smooth Shading Faces
+
+By default faces are shaded flat. This is great for modeling because it's easier to see the faces.
+
+To make the object appear smooth, faces can be rendered smooth. The benefit is that a low polygon model can look higher resolution.
+
+To set smooth shading for faces:
+
+* in **Edit Mode** select all faces (use **wireframe** view to also select back faces)
+* in the **Face** menu select **Shade Smooth**
+  * Note: select **Shade Flat** to revert to flat shading
+
+![smooth_shade](images/smooth_shade.gif)
 
 ---
 
