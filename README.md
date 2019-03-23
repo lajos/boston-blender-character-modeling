@@ -298,7 +298,7 @@ To view (and render) the mesh at a higher resolution, we can use the subdivision
 
 * select mesh in **object mode**
 * go to the **Modifier** panel (wrench icon)
-* from the **Add Modifier** menu select **Subdisivion Surface**
+* from the **Add Modifier** menu, select **Subdisivion Surface**
 * the **monitor** button turns the modifier on/off in the viewport
 * you can adjust **View** and **Render** subdivision level
 
@@ -313,14 +313,14 @@ Notes:
 
 ## Smooth Shading Faces
 
-By default faces are shaded flat. This is great for modeling because it's easier to see the faces.
+By default, faces are shaded flat. This is great for modeling because it's easier to see the faces.
 
 To make the object appear smooth, faces can be rendered smooth. The benefit is that a low polygon model can look higher resolution.
 
 To set smooth shading for faces:
 
-* in **Edit Mode** select all faces (use **wireframe** view to also select back faces)
-* in the **Face** menu select **Shade Smooth**
+* in **Edit Mode**, select all faces (use **wireframe** view to also select back faces)
+* in the **Face** menu, select **Shade Smooth**
   * note: select **Shade Flat** to revert to flat shading
 
 ![smooth_shade](images/smooth_shade.gif)
@@ -351,7 +351,7 @@ While the **X Mirror** option works for simple edits, it cannot handle more comp
 
 A better workflow is to cut the model in half and create a mirrored linked duplicate that will be automatically updated.
 
-In the **front ortho** view select half of the faces (in **wireframe** mode, otherwise back faces are not selected) and delete them:
+In the **front ortho** view, select half of the faces (in **wireframe** mode, otherwise back faces are not selected) and delete them:
 
 ![mesh_cut_half](images/mesh_cut_half.gif)
 
@@ -373,7 +373,7 @@ It's good practice to disable selection of the duplicate object and work on the 
 
 To join the mirrored halves back together:
 
-* in **Object Mode** select the two halves
+* in **Object Mode**, select the two halves
 * join them together (**Object/Join** or **ctrl-J** shortcut)
 * at this point, there are double vertices in the center. To check:
   * select a vertex by **clicking on it**, not with the box select tool
@@ -390,7 +390,7 @@ Half of the object was flipped, so those faces are now inside out. This will cau
 
 To check and fix:
 
-* in **Edit Mode** turn on normal display in the **Overlays** menu
+* in **Edit Mode**, turn on normal display in the **Overlays** menu
   * the normals show which way a face is oriented
   * we want all the blue "porcupine quills" pointing out
 * in **wireframe mode**, select all the faces
