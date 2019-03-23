@@ -1,4 +1,4 @@
-# Character Modeling in Blender
+# Character Modeling in Blender 2.80
 
 Resources for Boston Blender character modeling meetup.
 
