@@ -20,6 +20,8 @@ Resources for Boston Blender character modeling meetup.
 * [Merging Vertices](#Merging-Vertices)
 * [Reset Transformations](#Reset-Transformations)
 * [Scale by Number](#Scale-by-Number)
+* [Adding a Subdivision Modifier](#Adding-a-Subdivision-Modifier)
+* [Smooth Shading Faces](#Smooth-Shading-Faces)
 * [Working with a Symmetrical Mesh](#Working-with-a-Symmetrical-Mesh)
   * [X Mirror Option](#X-Mirror-Option)
   * [Mirrored Linked Duplicate](#Mirrored-Linked-Duplicate)
