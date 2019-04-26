@@ -25,6 +25,7 @@ Resources for Boston Blender character modeling meetup.
 * [Working with a Symmetrical Mesh](#Working-with-a-Symmetrical-Mesh)
   * [X Mirror Option](#X-Mirror-Option)
   * [Mirrored Linked Duplicate](#Mirrored-Linked-Duplicate)
+  * [Mirror Modifier](#Mirror-Modifier)
   * [Joining Mirrored Object](#Joining-Mirrored-Object)
   * [Fixing Normals](#Fixing-Normals)
 * [Transform Orientation](#Transform-Orientation)
@@ -51,6 +52,7 @@ Resources for Boston Blender character modeling meetup.
 | **model/e2_005.blend** | leg |
 | **model/e2_006.blend** | knees/elbows |
 | **model/e2_128.blend** | textured model turnaround |
+| **model/e2_head??.blend** | head model checkpoints |
 | **model/images/e2_*.png** | ortho images |
 | **model/images/eye.png** | eye texture |
 | **model/images/texture.png** | mesh texture |
@@ -366,6 +368,15 @@ Negate the **X** scale of the duplicate (set to -1.0):
 It's good practice to disable selection of the duplicate object and work on the original half:
 
 ![mesh_disable_mirrored](images/mesh_disable_mirrored.gif)
+
+### Mirror Modifier
+
+Another option is to use a [mirror modifier](https://docs.blender.org/manual/en/latest/modeling/modifiers/generate/mirror.html). Select the mesh in **object mode** and add a mirror modifier in the **Mofifier** tab.
+
+Check the **Clipping** option to make sure that vertices don't cross the mirror plane.
+
+
+![mirror_modifier](images/mirror_modifier.gif)
 
 ---
 
