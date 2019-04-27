@@ -174,7 +174,7 @@ Add another edge loop below the eye.
 
 ---
 
-At this point it's useful to create eyeballs as a reference for adjusting the shape of the eyelids.
+At this point it's useful to create eyeballs as a reference for adjusting the shape of the eye sockets and eyelids.
 
 **Checkpoint:** `e2_head39.blend`
 
