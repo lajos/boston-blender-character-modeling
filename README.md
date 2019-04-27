@@ -80,6 +80,7 @@ Resources for Boston Blender character modeling meetup.
 | **ctrl-J** | join objects |
 | **C** | circle select |
 | **alt-A** | deselect |
+| **alt-B** | 3d view mask |
 
 
 ### Mesh Modeling
