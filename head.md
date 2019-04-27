@@ -1,6 +1,6 @@
 # Head Modeling Steps
 
-Add a new plane. Rotate it 90 degrees on the X axis, size and move it to match about the height of the nose. Make sure to not move it on the X axis (X location should be zero).
+Add a new plane. Rotate it 90 degrees on the X axis, size and move it to match about the height of the nose. Make sure not to move it on the X axis (X location should be zero).
 
 Apply rotation and scale (all rotation values should be 0, all scale values 1).
 
@@ -236,7 +236,7 @@ Select these edges and extrude them back.
 
 ---
 
-Merge these two vertices at their center center.
+Merge these two vertices at their center.
 
 ![head50](images/head/head50.jpg)
 
