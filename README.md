@@ -8,6 +8,7 @@ Resources for Boston Blender character modeling meetup.
 
 ## Table of Contents
 
+* [Head Modeling Steps](/head.md)
 * [List of Files](#List-of-Files)
 * [Shortcuts](#Shortcuts)
 * [User Preferences](#User-Preferences)
