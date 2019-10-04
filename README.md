@@ -67,6 +67,7 @@ Resources for Boston Blender character modeling meetup.
 | Shortcut | Action |
 | ---- | ---- |
 | **alt-Q** | quad view |
+| **`** (tilde) | view menu |
 | **N** | toggle sidebar |
 | **T** | toggle toolbar |
 | **Z** | shading mode |
@@ -79,8 +80,10 @@ Resources for Boston Blender character modeling meetup.
 | **alt-D** | duplicate linked |
 | **ctrl-J** | join objects |
 | **C** | circle select |
+| **A** | select all |
 | **alt-A** | deselect |
 | **alt-B** | 3d view mask |
+| **shift-TAB** | toggle snapping |
 
 
 ### Mesh Modeling
@@ -95,6 +98,7 @@ Resources for Boston Blender character modeling meetup.
 | **M** | merge (join vertices) |
 | **V** | rip (split vertices) |
 | **shift-F** | fill polygon (make faces) |
+| **ctrl-B** | bevel edge |
 
 
 ### NURBS Hair Modeling
